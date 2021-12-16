@@ -1,0 +1,20 @@
+# Site settings
+title: "Mike + Suz"
+description: |
+    We're gettin Married!
+
+owner: Michael Cueno
+first_published: 2021
+email: krunocrew@gmail.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "www.mikeandsuz.com" # the base hostname & protocol for your site
+
+# Google analytics
+google_analytics: ""
+
+social:
+  github: https://github.com/michaelcueno/mikeandsuz.com
+  email: krunocrew@gmail.com
+
+# Build settings
+markdown: kramdown

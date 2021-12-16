@@ -1,0 +1,8 @@
+_site
+.sass-cache
+.jekyll-metadata
+Gemfile.lock
+full_images
+
+**/.DS_Store
+
