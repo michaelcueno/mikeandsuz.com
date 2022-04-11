@@ -210,9 +210,23 @@ $baseurl: '{{ site.baseurl }}/images';
 		text-align: right;
 	}
 
+	.center {
+	  display: flex;
+	  justify-content: center;
+  }
+
 	.rsvp-form {
-                background-color: 'black';
-        }
+     background-color: 'black';
+  }
+
+  .rsvp-container {
+     background-image: url('#{$baseurl}/std.png');
+     background-size: cover;
+     opacity: 59%;
+     max-height: 500;
+
+     max-width: 700px;
+  }
 
 /* Section/Article */
 
@@ -276,12 +290,11 @@ $baseurl: '{{ site.baseurl }}/images';
 	}
 
 /* Form */
-
 	form {
 		margin: 0 0 _size(element-margin) 0;
 	}
 
-	label {
+  label {
 		color: _palette(fg-bold);
 		display: block;
 		font-size: 0.9em;

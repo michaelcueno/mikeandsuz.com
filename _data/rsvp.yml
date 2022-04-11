@@ -1,0 +1,11 @@
+- name: email
+  type: email
+  placeholder: Your Email
+
+- name: name
+  type: text
+  placeholder: Your Name
+
+- name: guest_1
+  type: text
+  placeholder: Guest Name

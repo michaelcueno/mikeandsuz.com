@@ -9,70 +9,45 @@ layout: landing
   <a href="#intro" class="more scrolly">Details To Come!</a>
 </section>
 
-
 <section>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <h3>What are you waiting for?</h3>
-                <p>We would greatly appreciate if you could RSVP before 1st of November '17</p>
-                <form id="rsvp-form" class="rsvp-form"
-                      action="https://script.google.com/macros/s/AKfycbzoZZ0IuHTzv5ACi4TyIZwXE90DIDldVbkBGhoqGwM/dev" 
-                      method="POST">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-envelope"></i><input type="email" name="email" class=""
-                                                                     placeholder="Your email"
-                                                                     required>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-user"></i><input name="name" class=""
-                                                                 placeholder="Your name"
-                                                                 required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
-                                                                  max="4"
-                                                                  placeholder="Husband/Wife or kids"
-                                                                  required>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
-                                                                class="" min="0"
-                                                                placeholder="Invite code"
-                                                                required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12" id="alert-wrapper"></div>
-                    </div>
-                    <button class="btn-fill rsvp-btn">
-                        Yes,
-                        that's me!
-                    </button>
-                </form>
+  <div class="container">
+    <div class="row center">
+      <div> <!-- class="rsvp-container"> -->
+        <h3>RSVP!</h3>
+        <p>We would greatly appreciate if you could RSVP before October 1st</p>
+        <form id="rsvp-form" class="rsvp-form"
+                             action="https://script.google.com/macros/s/AKfycbzoZZ0IuHTzv5ACi4TyIZwXE90DIDldVbkBGhoqGwM/dev" 
+                             method="POST">
+          {% for field in site.data.rsvp %}
+            <div class="row">
+              <i class=""></i><input 
+                name="{{ field.name }}" 
+                type="{{ field.type }}"
+                placeholder="{{ field.placeholder }}"
+                class=""
+                required
+              >
             </div>
-        </div>
+          {% endfor %}
+          <div class="row">
+            <div class="col-md-12" id="alert-wrapper"></div>
+          </div>
+          <button class="btn-fill rsvp-btn">
+            Send RSVP!
+          </button>
+        </form>
+      </div>
     </div>
+  </div>
 </section>
 
 <!-- Nothing yet...
-<section id="details" class="wrapper style1 special">
-</section>
+  <section id="details" class="wrapper style1 special">
+  </section>
 
-<section id="couple" class="wrapper alt style2">
-</section>
+  <section id="couple" class="wrapper alt style2">
+  </section>
 
-<section id="venue" class="wrapper alt style2">
-</section>
+  <section id="venue" class="wrapper alt style2">
+  </section>
 -->
