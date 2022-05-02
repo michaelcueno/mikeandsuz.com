@@ -39,7 +39,7 @@ $baseurl: '{{ site.baseurl }}/images';
   }
 
 	.rsvp-form {
-     background-color: 'black';
+    background-color: 'black';
   }
 
   .rsvp-container {
@@ -1581,6 +1581,7 @@ $baseurl: '{{ site.baseurl }}/images';
 			opacity: 1;
 			outline: 0;
 			padding-left: _size(letter-spacing-alt);
+			margin-bottom: 2rem;
 			position: absolute;
 			text-align: center;
 			text-transform: uppercase;
@@ -1624,6 +1625,10 @@ $baseurl: '{{ site.baseurl }}/images';
 			h2 {
 				font-size: 1.25em;
 			}
+
+			form-input {
+			  font-size: 16pt;
+      }
 
 			br {
 				display: none;
