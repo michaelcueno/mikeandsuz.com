@@ -24,3 +24,8 @@ install rbenv somehow, then
 `gem install --user-install bundler jekyll`
 
 `jekyll serve`
+
+# Deploy 
+
+`jekyll build` 
+`./sync`

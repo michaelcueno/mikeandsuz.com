@@ -48,7 +48,7 @@ $baseurl: '{{ site.baseurl }}/images';
 //   background-size: cover;
      max-height: 500;
      max-width: 700px;
-     margin-top: 50px;
+     margin: 4rem 1rem 0rem 1rem;
   }
 
 /* Basic */
@@ -1620,18 +1620,12 @@ $baseurl: '{{ site.baseurl }}/images';
 
 		@include breakpoint(small) {
 			@include padding(7em, 3em);
-			height: auto;
-			min-height: 0;
 
 			h2 {
 				font-size: 1.25em;
 			}
 
 			br {
-				display: none;
-			}
-
-			.more {
 				display: none;
 			}
 		}
