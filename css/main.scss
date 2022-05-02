@@ -33,6 +33,24 @@ $baseurl: '{{ site.baseurl }}/images';
 		grid: ( gutters: 1.5em )
 	));
 
+/* Customs */
+  .padding-bottom {
+    padding-bottom: 8px,
+  }
+
+	.rsvp-form {
+     background-color: 'black';
+  }
+
+  .rsvp-container {
+//   background-image: url('#{$baseurl}/std.png');
+//   opacity: 59%;
+//   background-size: cover;
+     max-height: 500;
+     max-width: 700px;
+     margin-top: 50px;
+  }
+
 /* Basic */
 
 	@-ms-viewport {
@@ -215,18 +233,6 @@ $baseurl: '{{ site.baseurl }}/images';
 	  justify-content: center;
   }
 
-	.rsvp-form {
-     background-color: 'black';
-  }
-
-  .rsvp-container {
-     background-image: url('#{$baseurl}/std.png');
-     background-size: cover;
-     opacity: 59%;
-     max-height: 500;
-
-     max-width: 700px;
-  }
 
 /* Section/Article */
 

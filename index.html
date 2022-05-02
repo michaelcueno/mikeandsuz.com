@@ -6,20 +6,21 @@ layout: landing
     <h2>{{ site.title }}</h2>
     <p>{{ site.description | markdownify }}</p>
   </div>
-  <a href="#intro" class="more scrolly">Details To Come!</a>
+  <a href="#rsvp" class="more scrolly">RSVP!</a>
 </section>
 
-<section>
+<section id='rsvp'>
   <div class="container">
     <div class="row center">
-      <div> <!-- class="rsvp-container"> -->
-        <h3>RSVP!</h3>
+      <div class='rsvp-container'> <!-- class="rsvp-container"> -->
+        <h3>RSVP</h3>
         <p>We would greatly appreciate if you could RSVP before October 1st</p>
-        <form id="rsvp-form" class="rsvp-form"
-                             action="https://script.google.com/macros/s/AKfycbzoZZ0IuHTzv5ACi4TyIZwXE90DIDldVbkBGhoqGwM/dev" 
-                             method="POST">
+        <form id="rsvp-form" 
+              class="rsvp-form"
+              action="https://script.google.com/macros/s/AKfycbxcTJ7wCHolqz1tGMWbwUGH-DVATBxETDqA6jluU31ZQ9R49WZX3_cNRS5wdozGXuta/exec"
+              method="POST">
           {% for field in site.data.rsvp %}
-            <div class="row">
+            <div class="row center padding-bottom">
               <i class=""></i><input 
                 name="{{ field.name }}" 
                 type="{{ field.type }}"
@@ -29,12 +30,17 @@ layout: landing
               >
             </div>
           {% endfor %}
-          <div class="row">
+          <div class="row center">
             <div class="col-md-12" id="alert-wrapper"></div>
           </div>
-          <button class="btn-fill rsvp-btn">
-            Send RSVP!
-          </button>
+          <div id='submit-button' class="center padding-bottom">
+            <button class="btn-fill rsvp-btn">
+              Send RSVP!
+            </button>
+          </div>
+          <div id='thank-you' class="row" style="display:none">
+            <p>Thanks for RSVP'ing!</p>
+          </div>
         </form>
       </div>
     </div>
