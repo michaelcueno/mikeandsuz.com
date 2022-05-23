@@ -42,12 +42,17 @@ $baseurl: '{{ site.baseurl }}/images';
     background-color: 'black';
   }
 
+  .background_map {
+    background-image: url('#{$baseurl}/travel/sayulita_map.png');
+  }
+
   .rsvp-container {
 //   background-image: url('#{$baseurl}/std.png');
 //   opacity: 59%;
 //   background-size: cover;
      max-height: 500;
      max-width: 700px;
+     width: 500px;
      margin: 4rem 1rem 0rem 1rem;
   }
 
@@ -1078,7 +1083,7 @@ $baseurl: '{{ site.baseurl }}/images';
 				color: _palette($p, fg-bold);
 			}
 
-			h2, h3, h4, h5, h6 {
+			h1, h2, h3, h4, h5, h6 {
 				color: _palette($p, fg-bold);
 			}
 
@@ -1252,11 +1257,10 @@ $baseurl: '{{ site.baseurl }}/images';
 					}
 				}
 			}
-
 	}
 
 	.wrapper {
-		@include padding(6em, 0);
+		@include padding(6em, 2em);
 
 		> .inner {
 			width: 60em;

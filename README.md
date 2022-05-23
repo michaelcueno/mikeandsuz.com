@@ -17,13 +17,15 @@ Favicon by [Noah Camp from the Noun Project][6].
 
 install rbenv somehow, then 
 
-`rbenv install 3.0.0`
-`rbenv local 3.0.0`
-`rbenv rehash`
+```sh 
+rbenv install 3.0.0
+rbenv local 3.0.0
+rbenv rehash
 
-`gem install --user-install bundler jekyll`
+gem install --user-install bundler jekyll
 
-`jekyll serve`
+jekyll serve
+```
 
 # Deploy 
 
