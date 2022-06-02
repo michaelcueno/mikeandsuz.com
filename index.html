@@ -15,29 +15,37 @@ layout: landing
     <div class="row center">
       <div class='rsvp-container'> <!-- class="rsvp-container"> -->
         <h2>RSVP</h2>
-        <p>We would greatly appreciate if you could RSVP!</p>
+        <p>Help us out and RSVP early! Add everyone in your party!</p>
         <form id="rsvp-form" 
               class="rsvp-form"
               action="https://script.google.com/macros/s/AKfycbxAzdDpwj2c9khIkSB0ghPSi1L-4Y_rf8bG4KTtTTxMsAiXHdu61aPTnR9bZJLv-UcS/exec"
               method="POST">
-          {% for field in site.data.rsvp %}
-            <div class="row center padding-bottom">
-              <i class="form-input"></i><input 
-                name="{{ field.name }}" 
-                type="{{ field.type }}"
-                placeholder="{{ field.placeholder }}"
-                class=""
-                required
-              >
-            </div>
-          {% endfor %}
+          <div id="form-inputs">
+            {% for field in site.data.rsvp %}
+              <div class="row center padding-bottom">
+                <i class="form-input"></i><input 
+                  name="{{ field.name }}" 
+                  type="{{ field.type }}"
+                  placeholder="{{ field.placeholder }}"
+                  required
+                >
+              </div>
+            {% endfor %}
+          </div>
           <div class="row center">
             <div class="col-md-12" id="alert-wrapper"></div>
           </div>
-          <div id='submit-button' class="center padding-bottom">
-            <button class="btn-fill rsvp-btn">
-              Send RSVP!
-            </button>
+          <div class="flex">
+            <div id='add-guest-button' class="padding-top padding-bottom">
+              <button class="">
+                Add Guest
+              </button>
+            </div>
+            <div id='submit-button' class="padding-top padding-bottom">
+              <button class="green-box">
+                Submit
+              </button>
+            </div>
           </div>
           <div id='thank-you' class="row" style="display:none">
             <p>Thanks for RSVP'ing!</p>

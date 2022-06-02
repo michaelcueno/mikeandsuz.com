@@ -6,6 +6,6 @@
   type: text
   placeholder: Your Name
 
-- name: guest_1
+- name: guest_0
   type: text
-  placeholder: Guest Name
+  placeholder: Guest Name 

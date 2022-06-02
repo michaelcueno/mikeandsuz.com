@@ -34,11 +34,19 @@ $baseurl: '{{ site.baseurl }}/images';
 	));
 
 /* Customs */
+  .green-box {
+	box-shadow: inset 0 0 0 2px #199b9f;
+  }
+
   .padding-bottom {
     padding-bottom: 8px,
   }
 
-	.rsvp-form {
+  .padding-top {
+  	padding-top: 8px,
+  }
+
+  .rsvp-form {
     background-color: 'black';
   }
 
@@ -231,6 +239,11 @@ $baseurl: '{{ site.baseurl }}/images';
 
 	.align-right {
 		text-align: right;
+	}
+
+	.flex {
+		display: flex;
+		justify-content: space-between;
 	}
 
 	.center {
