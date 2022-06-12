@@ -14,8 +14,8 @@ url: "www.mikeandsuz.com" # the base hostname & protocol for your site
 google_analytics: ""
 
 social:
-  github: https://github.com/michaelcueno/mikeandsuz.com
   email: krunocrew@gmail.com
+#  github: https://github.com/michaelcueno/mikeandsuz.com
 
 # Build settings
 markdown: kramdown

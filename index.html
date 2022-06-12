@@ -2,7 +2,7 @@
 layout: landing
 ---
 <section id="banner">
-  <div class="inner">
+  <div class="inner center-banner">
     <h2>{{ site.title }}</h2>
     <p> Let's get Married!  </p>
     <p> Friday Jan 20th 2023 </p>
@@ -13,7 +13,7 @@ layout: landing
 <section id='rsvp' class='wrapper style2'>
   <div class="container">
     <div class="row center">
-      <div class='rsvp-container'> <!-- class="rsvp-container"> -->
+      <div class='rsvp-form-container'> <!-- class="rsvp-form-container"> -->
         <h2>RSVP</h2>
         <p>Help us out and RSVP early! Add everyone in your party!</p>
         <form id="rsvp-form" 
@@ -27,10 +27,18 @@ layout: landing
                   name="{{ field.name }}" 
                   type="{{ field.type }}"
                   placeholder="{{ field.placeholder }}"
-                  required
+                  {% if field.required %}
+                    required
+                  {% endif %}
                 >
               </div>
             {% endfor %}
+            <div class="row center padding-bottom">
+            <input required type="radio" id="will_attend" name="attendance" value="Will Attend">
+            <label for="will_attend">Will Attend</label><br>
+            <input required type="radio" id="cannot_attend" name="attendance" value="Cannot Attend">
+            <label for="cannot_attend">Cannot Attend</label><br>
+            </div>
           </div>
           <div class="row center">
             <div class="col-md-12" id="alert-wrapper"></div>
@@ -61,7 +69,7 @@ layout: landing
    Travel
   </h2>
   <p>
-    We picked <a href="https://goo.gl/maps/M9pRQNbUhfELb4yGA">Sayulita</a> for it's laid back, surfer beach town vibes.
+    We picked <a target="_blank" href="https://goo.gl/maps/M9pRQNbUhfELb4yGA">Sayulita</a> for it's laid back, surfer beach town vibes.
   </p>
   <img style="width: 80%; margin: auto" src="images/travel/sayulita.jpeg"/>
   <br></br>
@@ -75,7 +83,7 @@ layout: landing
    Stay
   </h2>
   <p>
-  We have a hotel block at the <a href="https://www.amorboutiquehotel.com">Amor Boutique Hotel</a>. We think the weekend would be most special if everyone could stay in the same place. 
+  We have a hotel block at the <a target="_blank" href="https://www.amorboutiquehotel.com">Amor Boutique Hotel</a>. We think the weekend would be most special if everyone could stay in the same place. 
   </p>
   <div>
     <img style="width: 40%; margin: auto" src="images/travel/hotel_1.jpeg"/>

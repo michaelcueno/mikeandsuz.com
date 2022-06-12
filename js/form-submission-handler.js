@@ -71,7 +71,7 @@ const LOTTIE=`<lottie-player src="${LOTTIE_FILE}" background="transparent"  spee
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
     // Animation
-    var container = document.querySelector('.rsvp-container');
+    var container = document.querySelector('.rsvp-form-container');
     var oldContent = container.innerHTML;
     container.innerHTML = LOTTIE;
     const timeout = setTimeout(() => {
@@ -107,13 +107,13 @@ const LOTTIE=`<lottie-player src="${LOTTIE_FILE}" background="transparent"  spee
   }
   
   function postFormSubmit() { 
+    var submitButton = document.querySelector("#rsvp-form");
+    if (submitButton) {
+      submitButton.style.display = "none";
+    }
     var thankYouMessage = document.querySelector("#thank-you");
     if (thankYouMessage) {
       thankYouMessage.style.display = "block";
-    }
-    var submitButton = document.querySelector("#submit-button");
-    if (submitButton) {
-      submitButton.style.display = "none";
     }
   }
 
