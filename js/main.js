@@ -26,7 +26,7 @@
 		// slow banner scroll 
 		$(document).scroll(function() {
 			var scroll = $(window).scrollTop();
-			$("#banner-img").css("top", "0" + (scroll * 1.5) + "px");
+			$("#banner-img").css("top", "0" + (scroll) + "px");
 		  });
 
 		// Disable animations/transitions until the page has loaded.
