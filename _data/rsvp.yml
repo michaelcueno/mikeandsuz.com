@@ -8,12 +8,12 @@
   placeholder: Your Name
   required: true
 
-- name: comments
-  type: text
-  placeholder: Comments?
-  required: false 
-
 - name: guest_0
   type: text
   placeholder: Guest Name 
+  required: false 
+
+- name: comments
+  type: text
+  placeholder: Comments?
   required: false 
