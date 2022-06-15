@@ -1616,6 +1616,9 @@ $baseurl: '{{ site.baseurl }}/images';
 			@include vendor('transition', ('transform 0.75s ease', 'opacity 0.75s ease'));
 			@include vendor('transition-delay', '3.5s');
 			@include vendor('transform', 'translateY(0)');
+			@include breakpoint(small) {
+				display: none;
+			}
 			border: none;
 			bottom: 0;
 			color: inherit;
