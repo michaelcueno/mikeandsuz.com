@@ -13,7 +13,3 @@
   placeholder: Guest Name 
   required: false 
 
-- name: comments
-  type: text
-  placeholder: Comments?
-  required: false 

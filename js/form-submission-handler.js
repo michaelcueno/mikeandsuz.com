@@ -132,4 +132,22 @@ const LOTTIE=`<lottie-player src="${LOTTIE_FILE}" background="transparent"  spee
       buttons[i].disabled = true;
     }
   }
+
+  // Event listener for extra RSVP info 
+  document.forms["rsvp-form"].elements['will_attend'].onclick = function() {
+    document.querySelector('#more-rsvp').style.display = 'block';
+
+    document.forms["rsvp-form"].elements['will_attend_welcome'].required = true;
+    document.forms["rsvp-form"].elements['cannot_attend_welcome'].required = true;
+    document.forms["rsvp-form"].elements['will_attend_boat'].required = true;
+    document.forms["rsvp-form"].elements['cannot_attend_boat'].required = true;
+  };
+  document.forms["rsvp-form"].elements['cannot_attend'].onclick = function() {
+    document.querySelector('#more-rsvp').style.display = 'none';
+
+    document.forms["rsvp-form"].elements['will_attend_welcome'].required = false;
+    document.forms["rsvp-form"].elements['cannot_attend_welcome'].required = false;
+    document.forms["rsvp-form"].elements['will_attend_boat'].required = false;
+    document.forms["rsvp-form"].elements['cannot_attend_boat'].required = false;
+  };
 })();

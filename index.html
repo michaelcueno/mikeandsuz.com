@@ -17,7 +17,6 @@ layout: landing
     <div class="row center">
       <div class='rsvp-form-container'> <!-- class="rsvp-form-container"> -->
         <h2>RSVP</h2>
-        <p>Help us out and RSVP early! Add everyone in your party!</p>
         <form id="rsvp-form" 
               class="rsvp-form"
               action="https://script.google.com/macros/s/AKfycbxAzdDpwj2c9khIkSB0ghPSi1L-4Y_rf8bG4KTtTTxMsAiXHdu61aPTnR9bZJLv-UcS/exec"
@@ -36,10 +35,27 @@ layout: landing
               </div>
             {% endfor %}
             <div class="row center padding-bottom">
-            <input required type="radio" id="will_attend" name="attendance" value="Will Attend">
-            <label for="will_attend">Will Attend</label><br>
-            <input required type="radio" id="cannot_attend" name="attendance" value="Cannot Attend">
-            <label for="cannot_attend">Cannot Attend</label><br>
+              <input required type="radio" id="will_attend" name="attendance" value="Will Attend">
+              <label for="will_attend">Will Attend</label><br>
+              <input required type="radio" id="cannot_attend" name="attendance" value="Cannot Attend">
+              <label for="cannot_attend">Cannot Attend</label><br>
+            </div>
+            <div id="more-rsvp" style="display: none">
+              <p>We have a few other events we need headcounts for, more details in the <a href='./#schedule'>schedule</a></p>
+              <p>Welcome Dinner (Night before)</p>
+              <div class="row center padding-bottom">
+                <input required type="radio" id="will_attend_welcome" name="welcome" value="Will Attend">
+                <label for="will_attend_welcome">Will Attend</label><br>
+                <input required type="radio" id="cannot_attend_welcome" name="welcome" value="Cannot Attend">
+                <label for="cannot_attend_welcome">Cannot Attend</label><br>
+              </div>
+              <p>Sunset Cruise (Day After)</p>
+              <div class="row center padding-bottom">
+                <input required type="radio" id="will_attend_boat" name="boat" value="Will Attend">
+                <label for="will_attend_boat">Will Attend</label><br>
+                <input required type="radio" id="cannot_attend_boat" name="boat" value="Cannot Attend">
+                <label for="cannot_attend_boat">Cannot Attend</label><br>
+              </div>
             </div>
           </div>
           <div class="row center">
@@ -57,10 +73,10 @@ layout: landing
               </button>
             </div>
           </div>
-          <div id='thank-you' class="row" style="display:none">
-            <p>Thanks for RSVP'ing!</p>
-          </div>
         </form>
+        <div id='thank-you' class="row" style="display:none">
+          <p>Thanks for RSVP'ing!</p>
+        </div>
       </div>
     </div>
   </div>
