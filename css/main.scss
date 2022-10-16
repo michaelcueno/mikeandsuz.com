@@ -272,6 +272,11 @@ $baseurl: '{{ site.baseurl }}/images';
 	  justify-content: center;
   }
 
+  .flex-end {
+	  display: flex;
+	  justify-content: flex-end;
+  }
+
 
 /* Section/Article */
 

@@ -17,6 +17,7 @@ layout: landing
     <div class="row center">
       <div class='rsvp-form-container'> <!-- class="rsvp-form-container"> -->
         <h2>RSVP</h2>
+            <p>Please RSVP for all events below. More details in the <a href='./#schedule'>schedule</a></p>
         <form id="rsvp-form" 
               class="rsvp-form"
               action="https://script.google.com/macros/s/AKfycbxAzdDpwj2c9khIkSB0ghPSi1L-4Y_rf8bG4KTtTTxMsAiXHdu61aPTnR9bZJLv-UcS/exec"
@@ -34,23 +35,23 @@ layout: landing
                 >
               </div>
             {% endfor %}
-            <div class="row center padding-bottom">
+            <div style="margin-bottom: .5em; margin-top: 1em">Ceremony</div>
+            <div class="row flex-end padding-bottom">
               <input required type="radio" id="will_attend" name="attendance" value="Will Attend">
               <label for="will_attend">Will Attend</label><br>
               <input required type="radio" id="cannot_attend" name="attendance" value="Cannot Attend">
               <label for="cannot_attend">Cannot Attend</label><br>
             </div>
-            <div id="more-rsvp" style="display: none">
-              <p>We have a few other events we need headcounts for, more details in the <a href='./#schedule'>schedule</a></p>
-              <p>Welcome Dinner (Night before)</p>
-              <div class="row center padding-bottom">
+            <div id="more-rsvp">
+              <div style="margin-bottom: .5em">Welcome Dinner (Night before)</div>
+              <div class="row flex-end padding-bottom">
                 <input required type="radio" id="will_attend_welcome" name="welcome" value="Will Attend">
                 <label for="will_attend_welcome">Will Attend</label><br>
                 <input required type="radio" id="cannot_attend_welcome" name="welcome" value="Cannot Attend">
                 <label for="cannot_attend_welcome">Cannot Attend</label><br>
               </div>
-              <p>Sunset Cruise (Day After)</p>
-              <div class="row center padding-bottom">
+              <div style="margin-bottom: .5em">Sunset Cruise (Day After)</div>
+              <div class="row flex-end padding-bottom">
                 <input required type="radio" id="will_attend_boat" name="boat" value="Will Attend">
                 <label for="will_attend_boat">Will Attend</label><br>
                 <input required type="radio" id="cannot_attend_boat" name="boat" value="Cannot Attend">
@@ -95,11 +96,11 @@ layout: landing
   Sayulita is a 40 minute drive from the Puerto Vallarta International Airport. There are a few options to get there:
   <br></br>
   <ul>
-    <li><strong>Taxi</strong> - Taxis only take cash, so make sure to have some on hand. They will take US Dollars but your likely to get overcharged. If you can, best to exchange some money for Pesos when you arrive at the Airport. Expect to pay somewhere between 30-50 USD for a Taxi.</li>
-    <li><strong>Private Shuttle</strong> - You can book a private Shuttle to pick you up from the airport. This is a good option if you have a group or just want someone to hand you a beer as soon as you get on the road. We've used <a href='https://www.sayulitalife.com/sayulita-suburban'>Sayulita Suburban</a> in the past, and they're great.</li>
-    <li><strong>Uber</strong> - Uber does operate in Sayulita and Puerto Vallarta, but they are not allowed in the airport. You'll need to walk outside of the airport if you want to take an Uber. We recommend using a Taxi or Shuttle from the airport, and only using Uber once your in Sayulita.</li>
+    <li><strong>Taxi</strong> - Taxis only take cash, so make sure to have some on hand. They will take US Dollars but you're likely to get overcharged. If you can, best to exchange some money for Pesos when you arrive at the Airport. Expect to pay somewhere between 30-50 USD for a Taxi.</li>
+    <li><strong>Private Shuttle</strong> - You can book a private Shuttle to pick you up from the airport. This is a good option if you have a group or just want someone to hand you a beer as soon as you get on the road. We've used <a href='https://www.sayulitalife.com/sayulita-suburban'>Sayulita Suburban</a> in the past, and they're great. You can also book a shuttle directly through the hotel by emailing <a href="mailto:info@amorboutiquehotel.com">info@amorboutiquehotel.com</a>.</li>
+    <li><strong>Uber</strong> - Uber does operate in Sayulita and Puerto Vallarta, but they are not allowed in the airport. You'll need to walk outside of the airport if you want to take an Uber. We recommend using a Taxi or Shuttle from the airport, and only using Uber once you're in Sayulita.</li>
   </ul>
-  <p><a href='https://www.sayulitalife.com/sayulitatransportation'>Learn more about transportation options here</a></p>
+  <p><a href='https://www.sayulitalife.com/sayulitatransportation'>Additional transportation options here</a></p>
 </section>
 
 <section id="stay" class="wrapper style5">
