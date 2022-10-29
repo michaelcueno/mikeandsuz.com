@@ -68,7 +68,7 @@
 					offset: $header.outerHeight()
 				});
 
-		// Menu.
+    // Menu.
 			$('#menu')
 				.append('<a href="#menu" class="close"></a>')
 				.appendTo($body)
@@ -101,6 +101,14 @@
 
 			}
 
+		  // alert 
+	    const alertBox = $("#alert")
+	    $('#close-btn').click(function(){
+	      alertBox.hide();
+      });
+	    $('#book-soon').click(function(){
+	      alertBox.hide();
+      });
 	});
 
 })(jQuery);
