@@ -1,0 +1,10 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+DTSTART:20230121T213000Z
+DTEND:20230122T011500Z
+SUMMARY:Party Boat
+DESCRIPTION:As a special thank you to our guests, we invite you to join us for a party at sea. Appetizers and drinks will be provided.\nBring your swimsuits!
+LOCATION:Pakeke Coffee Shop
+END:VEVENT
+END:VCALENDAR

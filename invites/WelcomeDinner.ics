@@ -1,0 +1,10 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+DTSTART:20230120T003000Z
+DTEND:20230120T030000Z
+SUMMARY:Welcome Dinner
+DESCRIPTION:Join us at La Gran Villa Terrace at the Amor Boutique Hotel for finger foods and margaritas.
+LOCATION:Amor Boutique Hotel
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,10 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+DTSTART:20230120T230000Z
+DTEND:20230121T050000Z
+SUMMARY:Wedding Ceremony
+DESCRIPTION:Cocktail hour, dinner and dancing to follow. Please arrive early. Shuttles will provide transportation from the Amor Boutique Hotel at 4:15 PM, or it is a 10 minute walk.\n\nSemi-formal attire suggested.\n\nReception to follow.
+LOCATION:Playa Secreta
+END:VEVENT
+END:VCALENDAR
