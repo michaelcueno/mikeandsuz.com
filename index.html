@@ -12,87 +12,14 @@ layout: landing
   <a href="#rsvp" class="more scrolly">RSVP!</a>
 </section>
 
-<!--
 <div id='alert' class='alert'>
-  <strong>Hey! Listen!</strong> The hotel block will be released to the general public after Nov 20th.  <a id='book-soon' href='/#stay'>Book your room soon!</a>
+  <strong>Hey! Listen!</strong> Some folks have extra space in shuttles they've booked between the Airport and the Hotel, if you are looking to carpool or also have extra space, <a id='book-soon' href='https://docs.google.com/spreadsheets/d/1ECxFkIRq3fPFP0W1ex9I5P6JmsPtEI4A8ntAk1CSZpU/edit#gid=0'>Request Access to this google sheet</a> to help coordinate.
   <div class="center" style="margin-top: 1em">
     <button type="button" id="close-btn" >
       <span>cool cool cool</span>
     </button>
   </div>
 </div>
--->
-
-<section id='rsvp' class='wrapper style2'>
-  <div class="container">
-    <div class="row center">
-      <div class='rsvp-form-container'> <!-- class="rsvp-form-container"> -->
-        <h2>RSVP</h2>
-        <form id="rsvp-form" 
-              class="rsvp-form"
-              action="https://script.google.com/macros/s/AKfycbxAzdDpwj2c9khIkSB0ghPSi1L-4Y_rf8bG4KTtTTxMsAiXHdu61aPTnR9bZJLv-UcS/exec"
-              method="POST">
-          <p>Please RSVP for all events below. More details in the <a href='./#schedule'>schedule</a></p>
-          <div id="form-inputs">
-            {% for field in site.data.rsvp %}
-              <div class="row center padding-bottom">
-                <i class="form-input"></i><input 
-                  name="{{ field.name }}" 
-                  type="{{ field.type }}"
-                  placeholder="{{ field.placeholder }}"
-                  {% if field.required %}
-                    required
-                  {% endif %}
-                >
-              </div>
-            {% endfor %}
-            <div style="margin-bottom: .5em; margin-top: 1em">Ceremony</div>
-            <div class="row flex-end padding-bottom">
-              <input required type="radio" id="will_attend" name="attendance" value="Will Attend">
-              <label for="will_attend">Will Attend</label><br>
-              <input required type="radio" id="cannot_attend" name="attendance" value="Cannot Attend">
-              <label for="cannot_attend">Cannot Attend</label><br>
-            </div>
-            <div id="more-rsvp">
-              <div style="margin-bottom: .5em">Welcome Dinner (Night before)</div>
-              <div class="row flex-end padding-bottom">
-                <input required type="radio" id="will_attend_welcome" name="welcome" value="Will Attend">
-                <label for="will_attend_welcome">Will Attend</label><br>
-                <input required type="radio" id="cannot_attend_welcome" name="welcome" value="Cannot Attend">
-                <label for="cannot_attend_welcome">Cannot Attend</label><br>
-              </div>
-              <div style="margin-bottom: .5em">Sunset Cruise (Day After)</div>
-              <div class="row flex-end padding-bottom">
-                <input required type="radio" id="will_attend_boat" name="boat" value="Will Attend">
-                <label for="will_attend_boat">Will Attend</label><br>
-                <input required type="radio" id="cannot_attend_boat" name="boat" value="Cannot Attend">
-                <label for="cannot_attend_boat">Cannot Attend</label><br>
-              </div>
-            </div>
-          </div>
-          <div class="row center">
-            <div class="col-md-12" id="alert-wrapper"></div>
-          </div>
-          <div class="flex">
-            <div id='add-guest-button' class="padding-top padding-bottom">
-              <button class="">
-                Add Guest
-              </button>
-            </div>
-            <div id='submit-button' class="padding-top padding-bottom">
-              <button class="green-box">
-                Submit
-              </button>
-            </div>
-          </div>
-        </form>
-        <div id='thank-you' class="row" style="display:none">
-          <p>Thanks for RSVP'ing!</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section id="travel" class="wrapper style5">
   <h2 id="section-header" class="style5"> 
@@ -207,6 +134,77 @@ layout: landing
       </button>
   </ul>
   <br />
+  </div>
+</section>
+
+<section id='rsvp' class='wrapper style2'>
+  <div class="container">
+    <div class="row center">
+      <div class='rsvp-form-container'> <!-- class="rsvp-form-container"> -->
+        <h2>RSVP</h2>
+        <form id="rsvp-form" 
+              class="rsvp-form"
+              action="https://script.google.com/macros/s/AKfycbxAzdDpwj2c9khIkSB0ghPSi1L-4Y_rf8bG4KTtTTxMsAiXHdu61aPTnR9bZJLv-UcS/exec"
+              method="POST">
+          <p>Please RSVP for all events below. More details in the <a href='./#schedule'>schedule</a></p>
+          <div id="form-inputs">
+            {% for field in site.data.rsvp %}
+              <div class="row center padding-bottom">
+                <i class="form-input"></i><input 
+                  name="{{ field.name }}" 
+                  type="{{ field.type }}"
+                  placeholder="{{ field.placeholder }}"
+                  {% if field.required %}
+                    required
+                  {% endif %}
+                >
+              </div>
+            {% endfor %}
+            <div style="margin-bottom: .5em; margin-top: 1em">Ceremony</div>
+            <div class="row flex-end padding-bottom">
+              <input required type="radio" id="will_attend" name="attendance" value="Will Attend">
+              <label for="will_attend">Will Attend</label><br>
+              <input required type="radio" id="cannot_attend" name="attendance" value="Cannot Attend">
+              <label for="cannot_attend">Cannot Attend</label><br>
+            </div>
+            <div id="more-rsvp">
+              <div style="margin-bottom: .5em">Welcome Dinner (Night before)</div>
+              <div class="row flex-end padding-bottom">
+                <input required type="radio" id="will_attend_welcome" name="welcome" value="Will Attend">
+                <label for="will_attend_welcome">Will Attend</label><br>
+                <input required type="radio" id="cannot_attend_welcome" name="welcome" value="Cannot Attend">
+                <label for="cannot_attend_welcome">Cannot Attend</label><br>
+              </div>
+              <div style="margin-bottom: .5em">Sunset Cruise (Day After)</div>
+              <div class="row flex-end padding-bottom">
+                <input required type="radio" id="will_attend_boat" name="boat" value="Will Attend">
+                <label for="will_attend_boat">Will Attend</label><br>
+                <input required type="radio" id="cannot_attend_boat" name="boat" value="Cannot Attend">
+                <label for="cannot_attend_boat">Cannot Attend</label><br>
+              </div>
+            </div>
+          </div>
+          <div class="row center">
+            <div class="col-md-12" id="alert-wrapper"></div>
+          </div>
+          <div class="flex">
+            <div id='add-guest-button' class="padding-top padding-bottom">
+              <button class="">
+                Add Guest
+              </button>
+            </div>
+            <div id='submit-button' class="padding-top padding-bottom">
+              <button class="green-box">
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+        <div id='thank-you' class="row" style="display:none">
+          <p>Thanks for RSVP'ing!</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
