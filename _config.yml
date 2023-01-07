@@ -1,5 +1,5 @@
 # Site settings
-title: "Mike + Suz"
+title: "Suz + Mike"
 description: |
     We're gettin Married! 
     Friday Jan 20th 2023
@@ -8,7 +8,7 @@ owner: Michael Cueno
 first_published: 2021
 email: krunocrew@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "www.mikeandsuz.com" # the base hostname & protocol for your site
+url: "www.suzandmike.com" # the base hostname & protocol for your site
 
 # Google analytics
 google_analytics: ""
