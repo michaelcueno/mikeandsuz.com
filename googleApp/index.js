@@ -1,7 +1,7 @@
 var TO_ADDRESS = "michael.cueno@gmail.com"; // email to send the form data to
 
 /**
- * This method is the entry point.
+ * This method is the entry point i guess.
  */
 function doPost(e) {
 
@@ -9,14 +9,15 @@ function doPost(e) {
     Logger.log(e); // the Google Script version of console.log see: Class Logger
     
     var mailData = e.parameters; // just create a slightly nicer variable name for the data
-    
+    /** Ehh... 
     if (mailData.invite_code != "01234") { // validate invite code before saving data
       Logger.log("Incorrect Invite Code");
       return ContentService
           .createTextOutput(JSON.stringify({"result":"error", "message": "Sorry, your invite code (" + mailData.invite_code + ") is incorrect."}))
           .setMimeType(ContentService.MimeType.JSON);
     }
-    
+    */
+
     record_data(e);
     
     MailApp.sendEmail({
@@ -80,5 +81,6 @@ function formatMailBody(obj) { // function to spit out all the keys/values from 
     // for every key, concatenate an `<h4 />`/`<div />` pairing of the key name and its value, 
     // and append it to the `result` string created at the start.
   }
+  result += 'See full signup list here: https://docs.google.com/spreadsheets/d/1U-F2sIdEF24xZsh2xzwuqeqnK9ZWh_I2i4U2U9KMJqQ'
   return result; // once the looping is done, `result` will be one long string to put in the email body
 }

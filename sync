@@ -4,5 +4,3 @@ jekyll build
 aws s3 sync _site s3://mikeandsuz.com --delete
 
 # Install ruby version 3.0.0 through rvm 
-
-
